@@ -178,9 +178,16 @@ git push
 2. Sign up/Login with GitHub
 3. Click "New Project"
 4. Import your `week1-portfolio-starter` repository
-5. Click "Deploy"
-6. Wait 2-3 minutes
-7. 🎉 Your site is live!
+5. **Configure Environment Variables** (if using database):
+   - In the "Environment Variables" section, add:
+   - Name: `DATABASE_URL`
+   - Value: Your Neon database connection string
+   - Click "Add" for all environments (Production, Preview, Development)
+6. Click "Deploy"
+7. Wait 2-3 minutes
+8. 🎉 Your site is live!
+
+**Note:** The build will succeed even without `DATABASE_URL` - it's only needed at runtime for the contact form API route. If you haven't set up a database yet, the contact form will show an error message, but the rest of your site will work perfectly.
 
 ### Step 3: Submit Your Work
 
